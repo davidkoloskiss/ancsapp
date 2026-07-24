@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    width: 60vw;
+    height: 60vh;
+    background: lightblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.4s ease;
+}
+
+.exit {
+    transform: translateX(-80vw);
+}
+
+.no-transition {
+    transition: none;
+}
