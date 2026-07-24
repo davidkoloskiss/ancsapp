@@ -9,21 +9,22 @@ body {
 
 .card {
     position: absolute;
-    top: 20vh;
-    left: 20vw;
-    width: 60vw;
-    height: 60vh;
+    top: 5vh;
+    left: 5vw;
+    width: 90vw;
+    height: 90vh;
     background: lightblue;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     transition: transform 0.4s ease;
 }
 
 .exit {
-    transform: translateX(-80vw);
+    transform: translateX(-95vw);
 }
 
 .no-transition {
