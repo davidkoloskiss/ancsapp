@@ -96,6 +96,7 @@ const questions = [
 "A következő ember, aki kimondja, hogy \"baszdmeg\", iszik."
 ];
 
+
 let current = 0;
 
 const card = document.getElementById("card");
