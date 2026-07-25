@@ -96,6 +96,21 @@ const questions = [
 "A következő ember, aki kimondja, hogy \"baszdmeg\", iszik."
 ];
 
+function shuffle(array) {
+  let currentIndex = array.length;
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+
+    // Pick a remaining element...
+    let randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+}
 
 let current = 0;
 
@@ -104,6 +119,8 @@ const ques = document.getElementById("ques");
 
 const tmp = document.getElementById("tmp");
 const questmp = document.getElementById("questmp");
+
+shuffle(questions);
 
 ques.textContent = questions[current];
 questmp.textContent = questions[current+1];
@@ -121,6 +138,7 @@ card.addEventListener("click", () => {
 
         if (current >= questions.length) {
             current = 0;
+            shuffle(questions);
         }
 
         // change text
