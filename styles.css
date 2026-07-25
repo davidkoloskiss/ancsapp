@@ -1,6 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
+    width: 100vw;
 
     display: flex;
     justify-content: center;
@@ -9,22 +10,27 @@ body {
 
 .card {
     position: absolute;
-    top: 5vh;
+    top: 10vh;
     left: 5vw;
     width: 90vw;
-    height: 90vh;
-    background: lightblue;
+    height: 80vh;
+    background: url("blue.jpeg");
+    background-size: 100% 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    
     text-align: center;
+    font-size: 2.3em;
+    font-family: "Caveat", cursive;
+    color: red;
 
     transition: transform 0.4s ease;
 }
 
 .exit {
-    transform: translateX(-95vw);
+    transform: translateX(-95vw) translateY(20vh) rotate(-20deg);
 }
 
 .no-transition {
